@@ -2,219 +2,195 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roca Negra Sunset Club | Digital Menu</title>
-  <meta name="description" content="Carta digital premium para Roca Negra Sunset Club" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Roca Negra Sunset Club | Carta Digital</title>
+  <meta name="description" content="Carta digital de Roca Negra Sunset Club en Playa Paraíso, Tenerife." />
+  <meta name="theme-color" content="#090807" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="ambient" aria-hidden="true">
-    <div class="ambient__glow ambient__glow--top"></div>
-    <div class="ambient__glow ambient__glow--right"></div>
-    <div class="ambient__grid"></div>
+    <span class="ambient__sun"></span>
+    <span class="ambient__rock ambient__rock--one"></span>
+    <span class="ambient__rock ambient__rock--two"></span>
   </div>
 
-  <header class="site-header">
-    <div class="shell">
-      <div class="topbar glass-panel">
-        <div class="brand">
-          <span class="brand__eyebrow">Playa Paraíso</span>
-          <span class="brand__title">Roca Negra</span>
-        </div>
-
-        <nav class="desktop-nav" aria-label="Primary">
-          <a href="#cocktails" data-i18n="navCocktails">Cocktelería</a>
-          <a href="#wines" data-i18n="navWines">Vinos</a>
-          <a href="#sangrias" data-i18n="navSangrias">Sangrías</a>
-          <a href="#bites" data-i18n="navBites">Bites</a>
-        </nav>
-
-        <div class="lang-switcher" aria-label="Language switcher">
-          <span class="lang-switcher__label" data-i18n="languageLabel">Idioma</span>
-          <div class="lang-switcher__buttons">
-            <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
-            <button type="button" class="lang-btn" data-lang="en">EN</button>
-            <button type="button" class="lang-btn" data-lang="it">IT</button>
-            <button type="button" class="lang-btn" data-lang="fr">FR</button>
-          </div>
-        </div>
-      </div>
-
-      <section class="hero-grid">
-        <article class="hero-card glass-panel">
-          <div class="hero-card__image" aria-hidden="true"></div>
-          <div class="hero-card__shade" aria-hidden="true"></div>
-
-          <div class="hero-card__content">
-            <div class="hero-tags">
-              <span class="hero-tag" data-i18n="heroTag1">Carta Digital</span>
-              <span class="hero-tag hero-tag--accent" data-i18n="heroTag2">Sunset Lounge</span>
-            </div>
-
-            <div class="hero-copy">
-              <p class="hero-copy__eyebrow" data-i18n="heroEyebrow">Cocktails · Wine · Sangría · Bites</p>
-              <h1 class="hero-copy__title" data-i18n="heroTitle">Una carta diseñada para sentirse como el lugar.</h1>
-              <p class="hero-copy__description" data-i18n="heroDescription">
-                Elegante, visual y clara. Una carta digital premium inspirada en el contraste entre roca volcánica, luz dorada y atmósfera de sunset club.
-              </p>
-
-              <div class="hero-actions">
-                <a href="#menu" class="button button--primary" data-i18n="viewMenu">Ver carta</a>
-                <a
-                  href="https://search.google.com/local/writereview?placeid=TU_PLACE_ID"
-                  class="button button--secondary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-i18n="review"
-                >Dejar reseña</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <aside class="side-stack">
-          <article class="side-card glass-panel">
-            <p class="side-card__eyebrow" data-i18n="concept">Concepto</p>
-            <h2 class="side-card__title" data-i18n="conceptTitle">Volcánico, sofisticado y fluido.</h2>
-            <p class="side-card__text" data-i18n="conceptDesc">
-              El diseño mezcla tonos carbón, transparencias, serif editorial y bloques simétricos para que el menú se sienta exclusivo sin perder claridad en móvil.
-            </p>
-          </article>
-
-          <article class="side-card glass-panel">
-            <p class="side-card__eyebrow" data-i18n="quickAccess">Accesos rápidos</p>
-            <div class="quick-grid">
-              <a href="#cocktails" class="quick-card">
-                <span class="quick-card__title" data-i18n="quickCocktails">Cocktelería</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-              <a href="#wines" class="quick-card">
-                <span class="quick-card__title" data-i18n="quickWines">Vinos</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-              <a href="#sangrias" class="quick-card">
-                <span class="quick-card__title" data-i18n="quickSangrias">Sangrías</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-              <a href="#bites" class="quick-card">
-                <span class="quick-card__title" data-i18n="quickBites">Bites</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-              <a href="#" class="quick-card">
-                <span class="quick-card__title">Instagram</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-              <a href="#" class="quick-card">
-                <span class="quick-card__title">Maps</span>
-                <span class="quick-card__meta" data-i18n="open">Abrir</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="side-card side-card--accent glass-panel">
-            <div class="side-card__split">
-              <div>
-                <p class="side-card__eyebrow side-card__eyebrow--warm" data-i18n="mobileFirst">Pensado para móvil</p>
-                <h3 class="side-card__headline" data-i18n="mobileTitle">Bonito. Rápido. Claro.</h3>
-              </div>
-              <div class="side-stat">
-                <strong>QR</strong>
-                <span data-i18n="mobileReady">listo</span>
-              </div>
-            </div>
-          </article>
-        </aside>
-      </section>
+  <header class="mobile-bar" aria-label="Barra superior móvil">
+    <a class="mobile-brand" href="#top" aria-label="Volver al inicio">
+      <span>Roca Negra</span>
+      <small>Sunset Club</small>
+    </a>
+    <div class="language-pills" aria-label="Cambiar idioma">
+      <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
+      <button class="lang-btn" type="button" data-lang="en">EN</button>
+      <button class="lang-btn" type="button" data-lang="it">IT</button>
+      <button class="lang-btn" type="button" data-lang="fr">FR</button>
     </div>
   </header>
 
-  <main id="menu" class="site-main">
-    <div class="shell">
-      <section class="category-strip glass-panel">
-        <a href="#cocktails" class="category-card">
-          <h3 data-i18n="catCocktails">Cocktelería</h3>
-          <p data-i18n="catCocktailsDesc">Destilados, cítricos y firma</p>
-        </a>
-        <a href="#wines" class="category-card">
-          <h3 data-i18n="catWines">Vinos</h3>
-          <p data-i18n="catWinesDesc">Selección fresca y elegante</p>
-        </a>
-        <a href="#sangrias" class="category-card">
-          <h3 data-i18n="catSangrias">Sangrías</h3>
-          <p data-i18n="catSangriasDesc">Jarras para compartir</p>
-        </a>
-        <a href="#bites" class="category-card">
-          <h3 data-i18n="catBites">Bites</h3>
-          <p data-i18n="catBitesDesc">Platos ligeros para sunset</p>
-        </a>
-      </section>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="shell hero__shell">
+        <div class="hero__media glass-card">
+          <div class="hero__image" aria-hidden="true"></div>
+          <div class="hero__overlay" aria-hidden="true"></div>
 
-      <section id="cocktails" class="menu-section">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="cocktailsEyebrow">Selección Signature</p>
-          <h2 class="section-heading__title" data-i18n="cocktailsTitle">Cocktelería</h2>
-          <p class="section-heading__text" data-i18n="cocktailsSubtitle">Cócteles con presencia, equilibrio y una estética que acompaña el ambiente del local.</p>
-        </div>
-        <div id="cocktails-grid" class="menu-grid"></div>
-      </section>
+          <div class="hero__content">
+            <p class="kicker" data-i18n="heroKicker">Playa Paraíso · Tenerife</p>
+            <h1 data-i18n="heroTitle">Roca Negra Sunset Club</h1>
+            <p class="hero__text" data-i18n="heroText">Bebidas, cócteles y pequeños platos para disfrutar frente al Atlántico, con calma, buena luz y cero menús eternos.</p>
 
-      <section id="wines" class="menu-section">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="winesEyebrow">Botellas Seleccionadas</p>
-          <h2 class="section-heading__title" data-i18n="winesTitle">Vinos</h2>
-          <p class="section-heading__text" data-i18n="winesSubtitle">Una selección corta y bien elegida. Frescura, mineralidad y tintos con estructura para que la carta respire.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#menu" data-i18n="viewMenu">Ver carta</a>
+              <a class="btn btn--ghost" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+          </div>
         </div>
-        <div id="wines-grid" class="menu-grid"></div>
-      </section>
 
-      <section id="sangrias" class="menu-section">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="sangriasEyebrow">Para Compartir</p>
-          <h2 class="section-heading__title" data-i18n="sangriasTitle">Sangrías</h2>
-          <p class="section-heading__text" data-i18n="sangriasSubtitle">Pensadas para mesa, tarde larga y turista feliz. Perfil frutal, visual y fácil de pedir desde móvil.</p>
-        </div>
-        <div id="sangrias-grid" class="menu-grid"></div>
-      </section>
+        <aside class="hero__panel glass-card">
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <strong data-i18n="openNow">Abierto para sunset</strong>
+              <p data-i18n="openText">Elige rápido, pide fácil y vuelve a mirar el mar, que para eso viniste.</p>
+            </div>
+          </div>
 
-      <section id="bites" class="menu-section">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="bitesEyebrow">Sunset Food</p>
-          <h2 class="section-heading__title" data-i18n="bitesTitle">Bites</h2>
-          <p class="section-heading__text" data-i18n="bitesSubtitle">Pequeños platos para acompañar bebida, compartir y sostener la experiencia.</p>
+          <div class="recommend-card">
+            <p class="mini-label" data-i18n="houseChoice">Recomendado</p>
+            <h2 data-i18n="featuredTitle">Sunset Spritz</h2>
+            <p data-i18n="featuredText">Ligero, cítrico y perfecto para primera ronda.</p>
+            <span>11€</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-tools section-pad section-pad--compact">
+      <div class="shell">
+        <div class="tool-card glass-card">
+          <div>
+            <p class="kicker" data-i18n="menuKicker">Carta digital</p>
+            <h2 data-i18n="menuTitle">Busca o entra directo en una sección</h2>
+          </div>
+
+          <label class="search-box" for="menuSearch">
+            <span data-i18n="searchLabel">Buscar</span>
+            <input id="menuSearch" type="search" placeholder="Spritz, vino, sangría..." autocomplete="off" data-i18n-placeholder="searchPlaceholder" />
+          </label>
         </div>
-        <div id="bites-grid" class="menu-grid"></div>
-      </section>
-    </div>
+
+        <nav class="category-nav" aria-label="Secciones de la carta">
+          <a href="#signature" class="category-chip is-active" data-section="signature"><span data-i18n="navSignature">Signature</span></a>
+          <a href="#cocktails" class="category-chip" data-section="cocktails"><span data-i18n="navCocktails">Cócteles</span></a>
+          <a href="#sangrias" class="category-chip" data-section="sangrias"><span data-i18n="navSangrias">Sangrías</span></a>
+          <a href="#wines" class="category-chip" data-section="wines"><span data-i18n="navWines">Vinos</span></a>
+          <a href="#beer" class="category-chip" data-section="beer"><span data-i18n="navBeer">Cerveza</span></a>
+          <a href="#soft" class="category-chip" data-section="soft"><span data-i18n="navSoft">Sin alcohol</span></a>
+          <a href="#bites" class="category-chip" data-section="bites"><span data-i18n="navBites">Bites</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="menu-list section-pad section-pad--compact">
+      <div class="shell">
+        <div id="emptyState" class="empty-state glass-card" hidden>
+          <h3 data-i18n="emptyTitle">No encontramos nada con esa búsqueda.</h3>
+          <p data-i18n="emptyText">Prueba con “vino”, “spritz”, “mojito” o pide ayuda al equipo.</p>
+        </div>
+
+        <section id="signature" class="menu-section" data-menu-section="signature">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="signatureKicker">Selección del local</p>
+            <h2 data-i18n="signatureTitle">Para empezar bien</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="signature"></div>
+        </section>
+
+        <section id="cocktails" class="menu-section" data-menu-section="cocktails">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="cocktailsKicker">Cocktail bar</p>
+            <h2 data-i18n="cocktailsTitle">Cócteles</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="cocktails"></div>
+        </section>
+
+        <section id="sangrias" class="menu-section" data-menu-section="sangrias">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="sangriasKicker">Para compartir</p>
+            <h2 data-i18n="sangriasTitle">Sangrías</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="sangrias"></div>
+        </section>
+
+        <section id="wines" class="menu-section" data-menu-section="wines">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="winesKicker">Copas y botellas</p>
+            <h2 data-i18n="winesTitle">Vinos</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="wines"></div>
+        </section>
+
+        <section id="beer" class="menu-section" data-menu-section="beer">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="beerKicker">Frío y directo</p>
+            <h2 data-i18n="beerTitle">Cerveza</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="beer"></div>
+        </section>
+
+        <section id="soft" class="menu-section" data-menu-section="soft">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="softKicker">Fresh drinks</p>
+            <h2 data-i18n="softTitle">Sin alcohol</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="soft"></div>
+        </section>
+
+        <section id="bites" class="menu-section" data-menu-section="bites">
+          <div class="section-heading">
+            <p class="kicker" data-i18n="bitesKicker">Algo para acompañar</p>
+            <h2 data-i18n="bitesTitle">Bites</h2>
+          </div>
+          <div class="menu-grid" data-menu-grid="bites"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="info-section section-pad">
+      <div class="shell info-grid">
+        <article class="info-card glass-card">
+          <p class="kicker" data-i18n="locationKicker">Dónde estamos</p>
+          <h2>Playa Paraíso</h2>
+          <p data-i18n="locationText">Un rincón para beber algo, compartir, mirar el atardecer y no pelearse con una carta ilegible en PDF. Revolucionario, por lo visto.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" data-i18n="mapsBtn">Abrir Maps</a>
+        </article>
+
+        <article class="info-card glass-card info-card--warm">
+          <p class="kicker" data-i18n="reviewKicker">¿Te gustó?</p>
+          <h2 data-i18n="reviewTitle">Déjanos una reseña</h2>
+          <p data-i18n="reviewText">Ayuda al local y a otros clientes. Además, Google vive de estas migas digitales.</p>
+          <a class="btn btn--primary" href="https://search.google.com/local/writereview?placeid=TU_PLACE_ID" target="_blank" rel="noopener noreferrer" data-i18n="reviewBtn">Dejar reseña</a>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell">
-      <div class="footer-card glass-panel">
-        <div class="footer-copy">
-          <p class="footer-copy__eyebrow" data-i18n="footerEyebrow">Roca Negra Sunset Club</p>
-          <h3 class="footer-copy__title" data-i18n="footerTitle">Una carta digital con verdadero sentido de lugar.</h3>
-          <p class="footer-copy__text" data-i18n="footerDesc">Diseñada para QR, lectura móvil, impacto visual y conversión. Incluye acceso directo a reseñas, redes y navegación rápida entre secciones.</p>
-        </div>
-
-        <div class="footer-links">
-          <a href="#menu" data-i18n="footerMenu">Carta</a>
-          <a href="#">Instagram</a>
-          <a href="#">Google Maps</a>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <p><strong>Roca Negra</strong> Sunset Club</p>
+      <a href="#top" data-i18n="backTop">Volver arriba</a>
     </div>
   </footer>
 
-  <a
-    href="https://search.google.com/local/writereview?placeid=TU_PLACE_ID"
-    class="floating-review"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-i18n="review"
-  >Dejar reseña</a>
+  <nav class="bottom-nav" aria-label="Navegación rápida móvil">
+    <a href="#menu" data-i18n="bottomMenu">Carta</a>
+    <a href="#signature" data-i18n="bottomTop">Top</a>
+    <a href="https://search.google.com/local/writereview?placeid=TU_PLACE_ID" target="_blank" rel="noopener noreferrer" data-i18n="bottomReview">Reseña</a>
+  </nav>
 
   <script src="script.js"></script>
 </body>
